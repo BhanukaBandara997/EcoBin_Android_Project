@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/ecobin_logo"
+            android:layout_height="@dimen/ecobin_logo"
+            android:layout_marginBottom="@dimen/ecobin_logo_bottom"
+            android:gravity="center"
+            android:src="@drawable/ic_eco_bin_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/userEmail_lbl"
+                android:layout_width="@dimen/username_lbl_width"
+                android:layout_height="@dimen/username_lbl_height"
+                android:layout_marginBottom="@dimen/username_lbl_margin_bottom"
+                android:background="@drawable/login_shadow"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/username_lbl_padding"
+                android:focusedByDefault="true"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/password_lbl"
+                android:layout_width="@dimen/username_lbl_width"
+                android:layout_height="@dimen/username_lbl_height"
+                android:layout_marginBottom="@dimen/password_lbl_margin_bottom"
+                android:background="@drawable/login_shadow"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:imeOptions="actionUnspecified"
+                android:paddingLeft="@dimen/username_lbl_padding"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/forget_password_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:paddingLeft="@dimen/username_lbl_padding"
+                android:text="@string/login_forget_password_lbl"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/forget_password_lbl" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_marginTop="@dimen/login_button_margin_top"
+            android:background="@drawable/login_button_shadow"
+            android:gravity="center"
+            android:text="@string/login_button"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

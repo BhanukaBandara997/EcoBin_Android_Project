@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Width & Height -->
+    <dimen name="ecobin_logo">250dp</dimen>
+    <dimen name="ecobin_logo_bottom">10dp</dimen>
+    <dimen name="username_lbl_width">250dp</dimen>
+    <dimen name="username_lbl_height">40dp</dimen>
+    <dimen name="login_button_width">150dp</dimen>
+    <dimen name="login_button_height">50dp</dimen>
+    <dimen name="dashboard_buttons_width">65dp</dimen>
+    <dimen name="dashboard_buttons_height">60dp</dimen>
+    <dimen name="dashboard_width_height">230dp</dimen>
+    <dimen name="dashboard_button_icon_size">50dp</dimen>
+    <dimen name="dashboard_button_width">110dp</dimen>
+    <dimen name="dashboard_button_height">60dp</dimen>
+    <dimen name="statistics_dots_height">30dp</dimen>
+
+
+    <!-- Margins & Padding -->
+    <dimen name="username_lbl_margin_bottom">10dp</dimen>
+    <dimen name="username_lbl_padding">10dp</dimen>
+    <dimen name="password_lbl_margin_bottom">12dp</dimen>
+    <dimen name="login_button_margin_top">20dp</dimen>
+    <dimen name="dashboard_margin">5dp</dimen>
+    <dimen name="dashboard_title_margin">10dp</dimen>
+    <dimen name="dashboard_title_margin_left">10dp</dimen>
+    <dimen name="dashboard_title_margin_right">85dp</dimen>
+    <dimen name="dashboard_button_margin_bottom">20dp</dimen>
+    <dimen name="forget_password_margin_10dp">10dp</dimen>
+    <dimen name="forget_password_lbl_margin_bottom">5dp</dimen>
+    <dimen name="forget_password_margin_20dp">20dp</dimen>
+    <dimen name="forget_password_margin_30dp">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+
+
+    <!-- TextSizes -->
+    <dimen name="forget_password_lbl">12sp</dimen>
+    <dimen name="dashboard_page_title">22sp</dimen>
+    <dimen name="dashboard_day">50sp</dimen>
+    <dimen name="dashboard_day_lbl">20sp</dimen>
+    <dimen name="dashboard_button_text">16sp</dimen>
+    <dimen name="forget_password_lbl_text">25sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+
+
+
+
+</resources>

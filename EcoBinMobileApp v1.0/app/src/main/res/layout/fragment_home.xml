@@ -1,0 +1,354 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    tools:context="com.tm_synchronizer.ecobinmobileappv10.ui.fragment.DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dashboard_margin"
+            android:layout_marginTop="@dimen/dashboard_margin">
+
+            <com.txusballesteros.widgets.FitChart
+                android:id="@+id/fit_chart"
+                android:layout_width="@dimen/dashboard_width_height"
+                android:layout_height="@dimen/dashboard_width_height" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/day_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxWidth="200dp"
+                    android:text="@string/dashboard_day_count"
+                    android:textColor="#212121"
+                    android:textSize="@dimen/dashboard_day"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxWidth="200dp"
+                    android:text="@string/dashboard_day_string"
+                    android:textColor="#212121"
+                    android:textSize="@dimen/dashboard_day_lbl"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/temperature_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dashboard_button_height"
+                    android:layout_marginBottom="@dimen/dashboard_button_margin_bottom"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dashboard_button_icon_size"
+                        android:layout_height="@dimen/dashboard_button_icon_size"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_temperature_2" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/dashboard_button_width"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Temperature"
+                            android:textSize="@dimen/dashboard_button_text"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/temperature_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="40"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/celsius"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="°C"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/methane_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dashboard_button_height"
+                    android:layout_marginBottom="@dimen/dashboard_button_margin_bottom"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dashboard_button_icon_size"
+                        android:layout_height="@dimen/dashboard_button_icon_size"
+                        android:background="@drawable/ic_methane" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/dashboard_button_width"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Methane"
+                            android:textSize="@dimen/dashboard_button_text"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/methane_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="97" />
+                            <TextView
+                                android:id="@+id/methanePPM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" ppm" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/stirring_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dashboard_button_height"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dashboard_button_icon_size"
+                        android:layout_height="@dimen/dashboard_button_icon_size"
+                        android:background="@drawable/ic_mixing_device" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/dashboard_button_width"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Stirring Status"
+                            android:textSize="@dimen/dashboard_button_text"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/stirring_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ON" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/humidity_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dashboard_button_height"
+                    android:layout_marginBottom="@dimen/dashboard_button_margin_bottom"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dashboard_button_icon_size"
+                        android:layout_height="@dimen/dashboard_button_icon_size"
+                        android:background="@drawable/ic_humidity" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/dashboard_button_width"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Humidity"
+                            android:textSize="@dimen/dashboard_button_text"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/humidity_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="70" />
+                            <TextView
+                                android:id="@+id/humidityValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="%" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/water_level_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dashboard_button_height"
+                    android:layout_marginBottom="@dimen/dashboard_button_margin_bottom"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dashboard_button_icon_size"
+                        android:layout_height="@dimen/dashboard_button_icon_size"
+                        android:background="@drawable/ic_water_level" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/dashboard_button_width"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Water Level"
+                            android:textSize="@dimen/dashboard_button_text"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/water_level_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="90" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bin_status_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dashboard_button_height"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dashboard_button_icon_size"
+                        android:layout_height="@dimen/dashboard_button_icon_size"
+                        android:background="@drawable/ic_bin" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/dashboard_button_width"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Bin Status"
+                            android:textSize="@dimen/dashboard_button_text"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/bin_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LOCKED" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

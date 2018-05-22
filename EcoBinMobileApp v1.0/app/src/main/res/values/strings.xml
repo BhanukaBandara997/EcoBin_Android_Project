@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">EcoBin Mobile App v1.0</string>
+    <string name="login_button">Login</string>
+    <string name="login_forget_password_lbl">Forget Password?</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="dashboard_day_count">5</string>
+    <string name="dashboard_day_string">day(s) left</string>
+
+    <!-- SAMPLE NAVIGATION DRAWER-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_statistics">Statistics</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_about_us">About Us</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Dashboard</item>
+        <item>Statistics</item>
+        <item>Profile</item>
+        <item>Notifications</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="forget_password">Forget Password?</string>
+    <string name="forget_password_text">Enter your mobile number to send the verification code</string>
+    <string name="forget_password_send_txt">Reset Password</string>
+
+    <string name="title_activity_maps">Map</string>
+
+
+    // LOGIN
+    <string name="error_invalid_password">Enter password</string>
+    <string name="error_email_address">Enter email address</string>
+    <string name="pref_remember_user_name_key">pref_remember_user_name</string>
+    <string name="pref_last_users_email">pref_last_user_name</string>
+    <string name="error_incorrect_user_and_password">Incorrect user name and password</string>
+    <string name="pref_api_server_key">pref_api_server</string>
+
+    //FORGET PASSWORD
+    <string name="confirm_verification_code">Enter verification code</string>
+    <string name="confirm_verification">Confirm Verification</string>
+    <string name="confirm_verification_btn">Submit</string>
+    <string name="resend_verification_btn">Resend Code</string>
+    <string name="create_new_password_lbl">Reset Your Password</string>
+    <string name="create_new_password">Type your new password</string>
+    <string name="create_new_password_reenter">Type your new password one more time</string>
+    <string name="create_new_password_btn">Submit</string>
+
+
+
+    // Intro slides
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="edit_profile_title">Edit Profile</string>
+    <string name="edit_profile_user_name_edit_text">Username</string>
+    <string name="edit_profile_address_edit_text">Address</string>
+    <string name="email_address_edit_text">Email</string>
+    <string name="mobile_no_edit_text">Mobile No</string>
+
+        <string name="hello_world">Hello world!</string>
+        <string name="menu_settings">Settings</string>
+        <string name="str_btn_find">Find</string>
+        <string name="hnt_et_location">Enter location</string>
+</resources>

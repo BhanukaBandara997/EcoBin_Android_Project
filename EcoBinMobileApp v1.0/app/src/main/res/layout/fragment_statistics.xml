@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        tools:context=".activity.StatisticsFragment">
+
+        <LinearLayout
+            android:id="@+id/completed_cycle_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/last_cycle_completed_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="left"
+                android:text="Number of cycles completed: "
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cycle_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="left"
+                android:text="4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/completed_cycle_day_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/completed_cycle_layout"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/number_of_cycles_completed_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Last cycle completed on :"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/days_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 5 "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ago_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" days ago" />
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/sliding_charts"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_below="@+id/completed_cycle_day_layout"
+            android:layout_marginTop="30dp">
+
+            <fragment
+                android:id="@+id/temperature_fragment"
+                class="com.tm_synchronizer.ecobinmobileappv10.ui.fragment.TemperatureFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_temperature_chart" />
+
+            <fragment
+                android:id="@+id/methane_fragment"
+                class="com.tm_synchronizer.ecobinmobileappv10.ui.fragment.TemperatureFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_temperature_chart" />
+
+            <fragment
+                android:id="@+id/humidity_fragment"
+                class="com.tm_synchronizer.ecobinmobileappv10.ui.fragment.TemperatureFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_temperature_chart" />
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/layoutDots"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statistics_dots_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dots_margin_bottom"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha=".5"
+            android:layout_above="@id/layoutDots"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+</FrameLayout>
